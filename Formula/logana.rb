@@ -5,21 +5,21 @@ class Logana < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/pauloremoli/logana/releases/download/v0.2.0/logana-aarch64-apple-darwin.tar.xz"
-      sha256 "39dbd70247f4ac163e0b6b824cb4252497cb2a0afde2de2abadd9c5dcdfdbdf0"
+      sha256 "e2c91a4cd91c4f9ef348a7eac6b57d87f6f76cfc2444703575a02316ac1d7d02"
     end
     if Hardware::CPU.intel?
       url "https://github.com/pauloremoli/logana/releases/download/v0.2.0/logana-x86_64-apple-darwin.tar.xz"
-      sha256 "d2a8797aea848e655a80d0ef7c62dfa073b4f92a04c70066cf3ebe9cd032e761"
+      sha256 "d5d1d81c950dbbadb81a10e0c86bed485d256a330f38981e4eb03452c2fb42fb"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/pauloremoli/logana/releases/download/v0.2.0/logana-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "45f6d0c1a39b174a37359be362bbaee8aef0b7ddd7cedcfeb8e0fabbc8b32cf2"
+      sha256 "6e7a99b21aed9bcef35bbc0602075a92c1318c915e208e8076b8a4dd56fb097e"
     end
     if Hardware::CPU.intel?
       url "https://github.com/pauloremoli/logana/releases/download/v0.2.0/logana-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9e8d7a52d221eaf8e35d37df3671c3dc177edbe59031f9493be57f76d682b3d9"
+      sha256 "e88630356b116ad861c2a8233d9d59843a4a2d0aef42550988130c3045defd88"
     end
   end
   license "GPL-3.0"
