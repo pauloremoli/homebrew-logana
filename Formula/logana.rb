@@ -1,25 +1,25 @@
 class Logana < Formula
   desc "A TUI log analyzer/viewer built for speed - handles files with millions of lines with instant filtering and VIM like navigation."
   homepage "https://github.com/pauloremoli/logana"
-  version "0.2.1"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.2.1/logana-aarch64-apple-darwin.tar.xz"
-      sha256 "7158df8276c7485767be8dc52c945c2e26ac71138f8cabb88740595f5ab88492"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.3.0/logana-aarch64-apple-darwin.tar.xz"
+      sha256 "645bcd677cac60bb9d7af519648783a3d3043153d4e45400c1507fd6bca88cd8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.2.1/logana-x86_64-apple-darwin.tar.xz"
-      sha256 "e9956ff73274fb68749271b90b10ae656861d552c089c62ae677523b439255a0"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.3.0/logana-x86_64-apple-darwin.tar.xz"
+      sha256 "431d89166fe18d6e2b1651ad2eb732115eec11260df91a62fea3e241b2dd6825"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.2.1/logana-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e2cf3fe178826ff373256ab86648043cd56d0f60f1845a41e3c0c021a8d22cf6"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.3.0/logana-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3d184ac83ee1058e5fc5dcba3694bf5010f32aeb613462c97ae25d5953b065ce"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.2.1/logana-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cb0dea00cf6e5297394d91842d0c7776a3b529911677d08d96011a99d45bdb0a"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.3.0/logana-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d53ccaa5fb9b29d75b22c2fa768f566d6749b281dcb8a6b7f0c7bbf7ef327d65"
     end
   end
   license "GPL-3.0"
