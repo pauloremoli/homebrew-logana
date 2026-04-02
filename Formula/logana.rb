@@ -1,25 +1,25 @@
 class Logana < Formula
-  desc "A TUI log analyzer/viewer built for speed - handles files with millions of lines with instant filtering and VIM like navigation."
+  desc "Turn any log source — files, compressed archives, Docker, or OTel streams — into structured data. Filter by pattern, field, or date range; annotate lines; bookmark findings; and export to Markdown, Jira, or AI assistants via the built-in MCP server."
   homepage "https://github.com/pauloremoli/logana"
-  version "0.5.0"
+  version "0.5.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.5.0/logana-aarch64-apple-darwin.tar.xz"
-      sha256 "41336fa8977704bb0a25815a009a9cdc14dc8652c12c8f06a81ec1557544fd3f"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.5.1/logana-aarch64-apple-darwin.tar.xz"
+      sha256 "aba0d88536f20ae212050af689c92ee6e21089bc03b617cefefab43ac972d523"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.5.0/logana-x86_64-apple-darwin.tar.xz"
-      sha256 "7e22d9902aba36d29eb5ee03a6d99f76affb9b94eceb67d74e1ee19c79e7a468"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.5.1/logana-x86_64-apple-darwin.tar.xz"
+      sha256 "efe6727ecc21fe3dedaa363a37ce4f94cd06d0ae9d5cb8fbfcea03acf3752d95"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.5.0/logana-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8630065687950d91f804fa0d05924fce0c86a80ad6f1515ab96b369e88a8533d"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.5.1/logana-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "308f1a19702f122ddb04d874a6bf440157a3f56b4075c552edc17d6f2af162df"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.5.0/logana-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3c44aaa5a20c04cedaa0a3873817362488db4c81f34aac2d6c63e2a7255dc8e5"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.5.1/logana-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b08f0c2f9ef11f09d93ef9820b2ad8adf13248e176a31a43899b55ed74f3d505"
     end
   end
   license "GPL-3.0"
