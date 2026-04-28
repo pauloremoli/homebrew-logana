@@ -1,25 +1,25 @@
 class Logana < Formula
   desc "Turn any log source — files, compressed archives, Docker, or OTel streams — into structured data. Filter by pattern, field, or date range; annotate lines; bookmark findings; and export to Markdown, Jira, or AI assistants via the built-in MCP server."
   homepage "https://github.com/pauloremoli/logana"
-  version "0.5.1"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.5.1/logana-aarch64-apple-darwin.tar.xz"
-      sha256 "aba0d88536f20ae212050af689c92ee6e21089bc03b617cefefab43ac972d523"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.6.0/logana-aarch64-apple-darwin.tar.xz"
+      sha256 "f5995d03f88f7f1085ab708a1489792075d86513009ae30e2526ad167326790c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.5.1/logana-x86_64-apple-darwin.tar.xz"
-      sha256 "efe6727ecc21fe3dedaa363a37ce4f94cd06d0ae9d5cb8fbfcea03acf3752d95"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.6.0/logana-x86_64-apple-darwin.tar.xz"
+      sha256 "cb96f252f0a88cd2c2a573c26d06d48d6c74cd7b5dea1c8ae8ff6e6be19d2eab"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.5.1/logana-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "308f1a19702f122ddb04d874a6bf440157a3f56b4075c552edc17d6f2af162df"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.6.0/logana-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "87a99a8fb369620bf690d0e8e2206118fe3a2382dc74e965197a19f9a716346a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.5.1/logana-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b08f0c2f9ef11f09d93ef9820b2ad8adf13248e176a31a43899b55ed74f3d505"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.6.0/logana-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8083993e2566b41b05f37659032a50e0654bbaf17bda4a42dcaaebfc5150fe19"
     end
   end
   license "GPL-3.0"
@@ -50,10 +50,10 @@ class Logana < Formula
   end
 
   def install
-    bin.install "logana" if OS.mac? && Hardware::CPU.arm?
-    bin.install "logana" if OS.mac? && Hardware::CPU.intel?
-    bin.install "logana" if OS.linux? && Hardware::CPU.arm?
-    bin.install "logana" if OS.linux? && Hardware::CPU.intel?
+    bin.install "logana", "schema" if OS.mac? && Hardware::CPU.arm?
+    bin.install "logana", "schema" if OS.mac? && Hardware::CPU.intel?
+    bin.install "logana", "schema" if OS.linux? && Hardware::CPU.arm?
+    bin.install "logana", "schema" if OS.linux? && Hardware::CPU.intel?
 
     install_binary_aliases!
 
