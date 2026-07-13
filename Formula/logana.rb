@@ -1,25 +1,25 @@
 class Logana < Formula
   desc "Turn any log source — files, compressed archives, Docker, or OTel streams — into structured data. Filter by pattern, field, or date range; annotate lines; bookmark findings; and export to Markdown, Jira, or AI assistants via the built-in MCP server."
   homepage "https://github.com/pauloremoli/logana"
-  version "0.7.1"
+  version "0.7.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.7.1/logana-aarch64-apple-darwin.tar.xz"
-      sha256 "7c132de576779a30228bce71d587a380e22508b7e60114cd4c6bce4f3572a7c6"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.7.2/logana-aarch64-apple-darwin.tar.xz"
+      sha256 "26adbf91d307c91e4ce9ba26faf651a6615f5cb2839e7df9da6db7c570992b72"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.7.1/logana-x86_64-apple-darwin.tar.xz"
-      sha256 "8e7d312e3b7b529e785ccc77afc9ae9613c8807dd7577c98493baf4fb0ec6ff9"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.7.2/logana-x86_64-apple-darwin.tar.xz"
+      sha256 "2e0e47f43f4e42304d48a0c34357cf8f1c960340f5baee684242798ea35274c4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.7.1/logana-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c7cb6546a740a607b095da4f08032f7873294e4f79eadc810dadd7fbae9035d3"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.7.2/logana-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "3518d23d1b2aab202fd198b8a1daa8cd524af5450ee778d0d844704e59b00bf5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.7.1/logana-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d896310b8de1ea9707e66f1f56812fc4ce780d65dad369267a97ae52d3d91b17"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.7.2/logana-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ba67ad5947b85742dd96062dfc095a7576432737f203e649c666b286d436dcb9"
     end
   end
   license "GPL-3.0"
