@@ -1,25 +1,25 @@
 class LoganaGui < Formula
   desc "GUI-only build of logana — turn any log source into structured data with a desktop app."
   homepage "https://github.com/pauloremoli/logana"
-  version "0.8.2"
+  version "0.8.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.8.2/logana-gui-aarch64-apple-darwin.tar.xz"
-      sha256 "5b56cae92adff07b1b23c06cdc97fab0a5c1227ec5c2f5c786f279ed1515683c"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.8.3/logana-gui-aarch64-apple-darwin.tar.xz"
+      sha256 "63699e5a1dd7fc79474c5b365fbefe6a03b1f920356536ea144505b5a78c7c93"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.8.2/logana-gui-x86_64-apple-darwin.tar.xz"
-      sha256 "96131b8e4351814aafe49cc43a6344597c1473fcb30b90ac14465289f6460edc"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.8.3/logana-gui-x86_64-apple-darwin.tar.xz"
+      sha256 "2fc7b6ef35642a11d9cb6b186482ddde4ff91de94c7a5ff84e56e56e2dd65106"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.8.2/logana-gui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d7925f1be1f7d9db8ef47bc1344f9fdc873a9521ead38f229a0c9cad38359ee1"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.8.3/logana-gui-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7de33e6f95bafbc375c71690d3afe5199bad29d0c4988aa869d8c0b6c9fbee99"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pauloremoli/logana/releases/download/v0.8.2/logana-gui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ecba0b4b5d397284d0253d4b45d47c4e379ee372ab221f6d0fc2f114f8d10f2f"
+      url "https://github.com/pauloremoli/logana/releases/download/v0.8.3/logana-gui-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b575e8838c1ae7281a5f9f671b068fe67097c907332f00f3c2293639b550d250"
     end
   end
   license "GPL-3.0"
